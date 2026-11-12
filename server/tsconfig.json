@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    // Which JavaScript version to output. ES2022 supports modern features like async/await.
+    "target": "ES2022",
+
+    // Use modern import/export syntax (matches "type": "module" in package.json).
+    "module": "ESNext",
+
+    // How imports are found. "Bundler" lets us write imports without ".js" endings.
+    "moduleResolution": "Bundler",
+
+    // Turn on all strict type checks, like Java's compiler refusing type mistakes.
+    "strict": true,
+
+    // Lets us import older libraries that don't use modern export syntax.
+    "esModuleInterop": true,
+
+    // Don't type-check the libraries' own files, only ours. Faster.
+    "skipLibCheck": true,
+
+    // Load type definitions for Node.js (process, fetch, etc.).
+    "types": ["node"]
+  },
+
+  // Check our source code and our tests.
+  "include": ["src", "test"]
+}

@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    // JavaScript version to target, and the browser features TypeScript knows about.
+    "target": "ES2020",
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+
+    // Modern import/export, resolved the way Vite does it.
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+
+    // Understand React's JSX (the HTML-like syntax in .tsx files).
+    "jsx": "react-jsx",
+
+    // Strict type checking, and skip checking libraries' own files.
+    "strict": true,
+    "skipLibCheck": true,
+
+    // Only check types; Vite does the actual building.
+    "noEmit": true,
+
+    // Lets TypeScript understand Vite-specific imports (like CSS files).
+    "types": ["vite/client"]
+  },
+  "include": ["src"]
+}

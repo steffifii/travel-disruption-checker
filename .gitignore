@@ -1,0 +1,8 @@
+# Libraries downloaded by "npm install" (very large; anyone can re-download them)
+node_modules
+
+# Build output
+dist
+
+# Private API keys: never share or upload these
+.env
